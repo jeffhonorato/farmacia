@@ -1,6 +1,6 @@
 .promocao {
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    background: rgb(23,128,122);
+    background: linear-gradient(90deg, rgba(23,128,122,1) 0%, rgba(255,188,66,1) 50%, rgba(255,255,255,1) 100%);
     padding-bottom: 4rem;
 
         .promo__titulo {
@@ -89,19 +89,20 @@
         }
 
         .card__desc {
-            font-family: $fonte-titulo;
-            font-size: 1.5rem;
+            font-family: $fonte-corpo;
+            font-size: 2rem;
             margin-bottom: 0.5rem;
         }
 
         .card__peso {
-            font-family: $fonte-titulo;
+            font-family: $fonte-corpo;
             font-size: 1.3rem;
             margin-bottom: 0.5rem;
         }
 
         .card__preco--info {
-            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+            background: rgb(23,128,122);
+            background: linear-gradient(90deg, rgba(23,128,122,1) 0%, rgba(255,188,66,1) 50%, rgba(255,255,255,1) 100%);
             padding: 1rem 0rem;
             border-radius: 4px;
         }

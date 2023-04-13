@@ -5,7 +5,7 @@ $cor-botoes: #F4442E;
 $cor-background: #dfdddd;
 $fonte-menu: 'Secular One', sans-serif;
 $fonte-titulo: 'DynaPuff', cursive;
-$fonte-corpo: 'Dongle', sans-serif;
+$fonte-corpo: 'Quattrocento', serif;;
 
 /* RESET - CONFIGURAÇÃO */
 * {
@@ -62,7 +62,7 @@ ul, li {
 @mixin card-config {
     text-align: center;
     padding: 1rem;
-    box-shadow: 7px 7px 0px 0px rgba(0,212,255,1);
+    box-shadow: 7px 7px 0px 0px #000;
     background: #fff;
     border-radius: 6px;
     width: 300px;
