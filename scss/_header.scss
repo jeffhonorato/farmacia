@@ -15,11 +15,10 @@
             position: relative;
             display: flex;
             align-items: flex-start;
-            background: rgb(23,128,122);
-            background: linear-gradient(0deg, rgba(23,128,122,1) 0%, rgba(252,176,64,1) 100%);
+            // background: rgb(23,128,122);
+            // background: linear-gradient(0deg, rgba(23,128,122,1) 0%, rgba(252,176,64,1) 100%);
             padding: 2px 6px;
             border-radius: 6px;
-            border: 2px solid #000;
             margin-top: 1.5rem;
 
             @include mobile {
