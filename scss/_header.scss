@@ -55,14 +55,6 @@
                 }
         }
 
-        // .icone__mobile__close {
-        //     display: none;
-        //     width: 30px;
-        //     cursor: pointer;
-        // }
-
-
-
         .nav {
             margin-top: 4rem;
             background-color: $cor-menu-mobile;
@@ -215,23 +207,23 @@
                 }
         }
 
-        // .logo__cabecalho {
-        //     display: flex;
-        //     justify-content: center;
-        // }
+        .logo__cabecalho {
+            display: flex;
+            place-content: center;
+        }
 
         .logo {
-            width: 400px;
+            width: 450px;
             margin: 0 auto;
             display: flex;
             justify-content: center;
             padding-top: 40px;
 
             @include mobile {
-                width: 250px;
-                margin: 0 auto;
+                width: 320px;
                 display: flex;
                 justify-content: center;
+                align-items: center;
             }
 
             @include tablet {
