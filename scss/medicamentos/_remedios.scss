@@ -117,8 +117,6 @@
             background: linear-gradient(90deg, rgba(255,188,66,1) 0%, rgba(23,128,122,1) 50%, rgba(255,255,255,1) 100%);
         }
 
-           
-
         .arroz__titulo {
             @include card-titulo;
             color: #fff;
@@ -145,24 +143,24 @@
         }
 
        .arroz__desc {
-            font-family: $fonte-titulo;
+            font-family: $fonte-corpo;
             font-size: 1.4rem;
             margin-bottom: 0.5rem;
         }
 
         .arroz__peso {
-            font-family: $fonte-titulo;
+            font-family: $fonte-corpo;
             font-size: 1.2rem;
             margin-bottom: 0.5rem;
         }
 
         .arroz__preco {
             @include card-preco;
-            background-color: rgba(223,221,221,1);
-            box-shadow: 7px 7px 0px 0px rgba(0,0,0,1);
-            color: #000;
-            font-size: 2rem;
+            background-color: $cor-botoes;
+            color: #fff;
+            font-size: 1.6rem;
             max-width: 140px;
+            border: 2px solid #000;
             margin: 0 auto;
         }
 

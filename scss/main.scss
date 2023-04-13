@@ -45,8 +45,7 @@ ul, li {
     color: #fff;
     font-family: $fonte-titulo;
     font-size: 1.7rem;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, #00d4ff 100%);
+    background-color: $cor-botoes;
     padding: .5rem;
     border: 1px solid #fff;
     border-radius: 4px;
@@ -71,7 +70,7 @@ ul, li {
 
         &:hover {
             transition: all .5s;
-            box-shadow: 10px 13px 0px 0px $cor-botoes;
+            box-shadow: 7px 7px 0px 0px $cor-section1;
             background: #fff;
         }
 }
