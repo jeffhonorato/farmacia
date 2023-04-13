@@ -1,0 +1,125 @@
+.footer {
+    background-color: $cor-header;
+    // height: 70vh;
+
+    //     @include mobile {
+    //         height: 200vh;
+    //     }
+
+    //     @include tablet {
+    //         height: 200vh;
+    //     }
+
+    //     @include desktop {
+    //         height: 150vh;
+    //     }
+
+        .footer__box {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer__logo {
+            width: 400px;
+        }
+
+        .footer__img {
+            width: 360px;
+            padding: 2rem 2rem;
+            // background-color: chartreuse;
+        }
+
+        .footer__titulo {
+            font-family: $fonte-titulo;
+            color: #fff;
+            text-align: center;
+            
+        }
+
+        .footer__sociais {
+            display: flex;
+            justify-content: center;
+            gap: .5rem;
+            margin-top: 1rem;
+        }
+
+        .footer__icone {
+            width: 40px;
+        }
+
+        .footer__end {
+            background-color: $cor-section1;
+            padding: 1rem;
+            text-align: center;
+            margin: .4rem;
+            border-radius: 4px;
+            box-shadow: 4px 4px 8px 0px #fff;
+
+                .footer__end__titulo {
+                    font-family: $fonte-titulo;
+                    font-size: 2.4rem;
+                    padding-bottom: .8rem;
+                }
+
+                .footer__rua,
+                .footer__numero,
+                .footer__bairro,
+                .footer__cidade {
+                    font-family: $fonte-corpo;
+                    font-weight: bold;
+                    font-size: 1.5rem;
+                }
+        }
+
+        .footer__maps {
+            padding: 2rem;
+
+                .maps {
+                    width: 300px;
+                    height: 400px;
+                }
+        }
+
+        .desenvolvedor {
+            display: flex;
+            justify-items: center;
+            justify-content: center;
+            gap: .5rem;
+            border-top: 2px solid #fff ;
+        }
+
+        .dev__ico {
+            width: 36px;
+        }
+
+        .dev__titulo {
+            font-family: $fonte-menu;
+            font-size: 1.5rem;
+
+                
+        }
+
+        // .dev__link {
+        //     background-color: #fff;
+            
+        // }
+
+        .dev__name {
+            color: #fff;
+            text-decoration: underline;
+
+                &:hover {
+                    text-decoration: none;
+                    transition: all .6s;
+                }
+
+                @include mobile {
+                    color: #fff;
+                }
+        }
+
+}
+

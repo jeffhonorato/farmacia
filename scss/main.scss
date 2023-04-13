@@ -1,0 +1,129 @@
+/* FONTES - CORES*/
+$cor-header: #042A8F;
+$cor-section1: #FFBC42;
+$cor-menu-mobile: #00d4ff ;
+$cor-botoes: #F4442E;
+$cor-background: #dfdddd;
+$fonte-menu: 'Gurajada', serif;
+$fonte-titulo: 'Marcellus SC', serif;
+$fonte-corpo: 'Thasadith', sans-serif;
+
+/* RESET - CONFIGURAÇÃO */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, li {
+    list-style: none;
+}
+
+/* MIXINS */
+@mixin titulo-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    background-color: $cor-header;
+    padding: 1rem;
+}
+
+@mixin btn-section {
+    color: #fff;
+    font-family: $fonte-titulo;
+    font-size: 1.7rem;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, #00d4ff 100%);
+    padding: .5rem;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    box-shadow: 2px 4px 5px #000;
+    cursor: pointer;
+
+        &:hover {
+            background: $cor-menu-mobile;
+            box-shadow: 2px 4px 5px #000;
+        }
+}
+
+@mixin card-config {
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 7px 7px 0px 0px rgba(0,212,255,1);
+    background: #fff;
+    border-radius: 6px;
+    width: 300px;
+
+        &:hover {
+            transition: all .5s;
+            box-shadow: 10px 13px 0px 0px rgba(0,0,0,1);
+        }
+}
+
+@mixin card-titulo {
+    font-family: $fonte-titulo;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    text-decoration: underline;
+}
+
+@mixin card-preco {
+    font-family: $fonte-corpo;
+    font-weight: bold;
+    background-color: $cor-header;
+    box-shadow: 2px 4px 5px #fff;
+    padding: 0.5rem;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 1.2rem;
+}
+
+/****** RESPONSIVIDADE ******/
+@mixin mobile {
+    @media(max-width: 480px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media(min-width: 480px) and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media(min-width: 768px) and (max-width: 1480px) {
+        @content;
+    }
+}
+
+@mixin landscape {
+    @media screen and (orientation:landscape) {
+        @content;
+    }
+}
+
+
+/* PÁGINA - ARQUITETURA */
+@import "header";
+@import "slider-promo";
+@import "promocao";
+@import "alimentos";
+@import "bebidas";
+@import "limpeza";
+@import "footer";

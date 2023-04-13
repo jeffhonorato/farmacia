@@ -1,0 +1,363 @@
+.alimentos {
+    background-image: url("../img/background-section.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .js-conteudo-alimentos {
+        display: none;
+    }
+
+    .js-conteudo-alimentos.ativo {
+        display: block;
+        animation: show .5s forwards;
+    }
+
+    @keyframes show {
+        from {
+            opacity: 0;
+            transform: translate3d(-50px, 0, 0);
+        } 
+        to {
+            opacity: 1;
+            transform: translate3d(0, 0, 0)
+        }
+    }
+    
+        .alimentos__cabecalho {
+            background: rgb(255,188,66);
+            background: linear-gradient(0deg, rgba(255,188,66,1) 0%, rgba(223,221,221,1) 100%);
+        }
+
+        .alimentos__titulo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5rem;
+            padding: 1rem;
+            
+
+                @include mobile {
+                    gap: 1rem;
+                    display: flex;
+                    flex-direction: column-reverse;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                @include tablet {
+                    gap: 1.4rem;
+                }
+        }
+
+        .img__alimentos {
+            width: 12.5rem;
+
+                @include mobile {
+                    width: 8rem;
+                }
+        }
+
+        .titulo {
+            font-family: $fonte-titulo;
+            font-size: 4rem;
+            color: #000;
+            text-align: center;
+
+                @include mobile {
+                    font-size: 3.2rem;    
+                }
+
+                @include tablet {
+                    font-size: 2.8rem;    
+                }
+        }
+
+        .menu__alimentos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+            padding: 2rem 0rem;
+
+                @include mobile {
+                    gap: .6rem;
+                    padding: 2rem 0.5rem;
+                }
+
+                @include tablet {
+                    gap: 1rem;
+                    padding: 2rem 0.5rem;
+                }
+
+
+        }
+
+        .menu__item {
+            @include btn-section;
+
+                @include mobile {
+                    font-size: 1.2rem;
+                }
+
+                @include tablet {
+                    font-size: 1.2rem;
+                }
+
+                &:hover {
+                    color: #000;
+                    transition: all .5s;
+                }    
+        }
+
+        /***** SESSÂO ARROZ *****/
+        .arroz__box {
+            padding: 3rem 0rem;
+            background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(9,9,121,1) 35%, rgba(2,0,36,1) 100%);
+        }
+
+           
+
+        .arroz__titulo {
+            @include card-titulo;
+            color: #fff;
+        }
+
+        .arroz__cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .arroz__item {
+            @include card-config;
+
+            &:hover .arroz__preco {
+                box-shadow: 7px 7px 0px 0px $cor-menu-mobile;
+            }
+        }
+
+        .arroz__img {
+            width: 180px;
+        }
+
+       .arroz__desc {
+            font-family: $fonte-titulo;
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .arroz__peso {
+            font-family: $fonte-titulo;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .arroz__preco {
+            @include card-preco;
+            background-color: rgba(223,221,221,1);
+            box-shadow: 7px 7px 0px 0px rgba(0,0,0,1);
+            color: #000;
+            font-size: 2rem;
+            max-width: 140px;
+            margin: 0 auto;
+        }
+
+        /***** SESSÂO FEIJÃO *****/
+        .feijao__box {
+            background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(9,9,121,1) 35%, rgba(2,0,36,1) 100%);
+            padding: 3rem 0rem;
+        }
+
+        .feijao__titulo {
+            font-family: $fonte-titulo;
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 3rem;
+            text-decoration: underline;
+            color: #fff;
+        }
+        
+        .feijao__cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .feijao__item {
+            @include card-config;
+
+            &:hover .feijao__preco {
+                box-shadow: 7px 7px 0px 0px $cor-menu-mobile;
+            }
+            
+        }
+
+        .feijao__img {
+            width: 180px;
+        }
+
+        .feijao__desc {
+            font-family: $fonte-titulo;
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .feijao__peso {
+            font-family: $fonte-titulo;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .feijao__preco {
+            @include card-preco;
+            background-color: rgba(223,221,221,1);
+            box-shadow: 7px 7px 0px 0px rgba(0,0,0,1);
+            color: #000;
+            font-size: 2rem;
+            max-width: 140px;
+            margin: 0 auto;
+        }
+
+        /***** SESSÂO BISCOITOS *****/
+        .biscoito__box {
+            background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(9,9,121,1) 35%, rgba(2,0,36,1) 100%);
+            padding: 3rem 0rem;
+        }
+
+        .biscoito__titulo {
+            font-family: $fonte-titulo;
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 3rem;
+            text-decoration: underline;
+            color: #fff;
+        }
+
+        .biscoito__cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .biscoito__item {
+            @include card-config;
+        }
+
+        .biscoito__img {
+            width: 180px;
+        }
+
+        .biscoito__desc {
+            font-family: $fonte-titulo;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .biscoito__preco {
+            @include card-preco;
+        }
+
+        /***** SESSÂO FRUTAS *****/
+        .frutas__box {
+            padding: 3rem 0rem;
+        }
+
+        .frutas__titulo {
+            font-family: $fonte-titulo;
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 3rem;
+            text-decoration: underline;
+        }
+
+        .frutas__cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .fruta__item {
+            @include card-config;
+        }
+
+        .fruta__img {
+            width: 180px;
+        }
+
+        .fruta__desc {
+            font-family: $fonte-titulo;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .fruta__preco {
+            @include card-preco;
+        }
+
+        /***** SESSÂO ENLATADOS *****/
+        .enlatados__box {
+            padding: 3rem 0rem;
+        }
+
+        .enlatados__titulo {
+            font-family: $fonte-titulo;
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 3rem;
+            text-decoration: underline;
+        }
+
+        .enlatados__cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .enlatados__item {
+            @include card-config;
+        }
+
+        .enlatado__img {
+            width: 180px;
+        }
+
+        .enlatado__desc {
+            font-family: $fonte-titulo;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .enlatado__preco {
+            @include card-preco;
+        }
+
+
+        /***** SWIPER CONFIG *****/
+        .swiper {
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+          }
+    
+          .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 300px;
+            height: 300px;
+          }
+
+        //   .swiper-pagination {
+        //       padding-top: 4rem;
+        //   }
+}

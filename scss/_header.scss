@@ -1,0 +1,256 @@
+.header {
+    // height: 80vh;
+    background-color: $cor-header;
+    padding: 4rem;
+    
+
+        .cabecalho__menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 100;
+        }
+
+        .menu__mobile {
+            position: relative;
+            display: flex;
+            align-items: flex-start;
+            background-color: $cor-menu-mobile;
+            padding: 2px 6px;
+            border-radius: 6px;
+            border: 2px solid #000;
+            margin-top: 1.5rem;
+
+            @include mobile {
+                // width: 20%;
+                // padding-left: 1rem;
+                // border-radius: 6px;
+                // box-shadow: 1px 1px 4px 5px #fff;
+                margin-top: 1.5rem;
+            }
+            
+        }
+
+        .icone__mobile {
+            cursor: pointer;
+            width: 40px;
+            
+
+                @include mobile {
+                    width: 40px;
+                    // padding-bottom: 1rem;
+                    background: rgba(0, 0, 0, 0.1);
+                    background-color: $cor-menu-mobile;
+                    // border-radius: 60%;
+                    // display: block;
+                    // margin: 0 auto;
+                }
+
+                @include landscape {
+                    width: 35px;
+                }
+
+                @include desktop {
+                    width: 50px;
+                }
+        }
+
+        // .icone__mobile__close {
+        //     display: none;
+        //     width: 30px;
+        //     cursor: pointer;
+        // }
+
+
+
+        .nav {
+            margin-top: 4rem;
+            background-color: $cor-menu-mobile;
+            width: 140%;
+            padding: .5rem;
+            border-top-right-radius: 6px;
+            border-bottom-right-radius: 6px;
+            box-shadow: 1px 1px 4px 5px #fff;
+            display: none;
+            margin-top: 1rem;
+            animation: show .8s;
+            transition: all .5s;
+            position: relative;
+    
+                @include mobile {
+                    background-color: $cor-menu-mobile;
+                    width: 100%;
+                    padding: .5rem;
+                    border-top-right-radius: 6px;
+                    border-bottom-right-radius: 6px;
+                    box-shadow: 1px 1px 4px 5px #fff;
+                    display: none;
+                    margin-top: 1rem;
+                    animation: show .8s;
+                    transition: all .5s;
+                }
+
+                @include tablet {
+                    background-color: $cor-menu-mobile;
+                    width: 100%;
+                    padding: .5rem;
+                    border-top-right-radius: 6px;
+                    border-bottom-right-radius: 6px;
+                    box-shadow: 1px 1px 4px 5px #fff;
+                    display: none;
+                    margin-top: 1rem;
+                    animation: show .8s;
+                    transition: all .5s;
+                }
+
+                @include landscape {
+                    width: 100%;
+                }
+
+                @keyframes show {
+                    from {
+                        opacity: 1;
+                        left: -40px;
+                      }
+                    
+                      to {
+                        opacity: 0;
+                        left: 0px;
+                      }
+                }
+        }
+
+        .nav.ativo {
+            display: block;
+        }
+
+        .nav__bloco {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            justify-content: center;
+
+                @include mobile {
+                    gap: .5rem;
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    padding-left: 1rem;
+                   
+                }
+
+                @include landscape {
+                    gap: .4rem;
+                }
+        }
+
+        .nav__link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: .1rem;
+            box-shadow: 0px 1px 10px 1px #000;
+            padding: 0 .4rem;
+            border-radius: 8px;
+
+                &:hover {
+                    background-color: #fff;
+                    transition: all .8s; 
+                }
+
+                &:hover .nav__item {
+                    color: #000;
+                }
+
+                &:hover .nav__icone {
+                    color: #000;
+                }
+
+                @include mobile {
+                    margin-bottom: .7rem;
+                    width: 150px;
+                    box-shadow: 0px 1px 10px 1px #000;
+                }
+
+            
+        }
+
+        .nav__icone {
+            color: #000;
+            font-size: 1.3rem;
+
+            @include mobile {
+                font-size: 1.4rem;
+                color: #000;
+            }
+
+            @include landscape {
+                font-size: .8rem;
+            }
+
+            @include desktop {
+                font-size: 1.3rem;
+            }
+        }
+
+        .nav__item {
+            color: #000;
+            font-family: $fonte-menu;
+            font-size: 1.2rem;
+
+                @include mobile {
+                    font-size: 1rem;
+                    color: #000;
+                }
+
+                @include tablet {
+                    font-size: 1.2rem;
+                }
+
+                @include landscape {
+                    font-size: .6rem;
+                }
+
+                @include desktop {
+                    font-size: 1.2rem;
+                }
+        }
+
+        // .logo__cabecalho {
+        //     display: flex;
+        //     justify-content: center;
+        // }
+
+        .logo {
+            width: 400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            padding-top: 40px;
+
+            @include mobile {
+                width: 250px;
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+            }
+
+            @include tablet {
+                width: 24rem;
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+                padding-bottom: 2rem;
+            }
+
+            @include desktop {
+                padding-bottom: 2rem;
+            }
+
+        }
+
+        
+
+        
+        
+
+}

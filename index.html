@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/icone-favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Gurajada&family=Marcellus+SC&family=Thasadith&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/main.css">
+    <title>SUPERMERCADO PB</title>
+</head>
+<body>
+
+    <header class="header" id="header">
+
+        <div class="cabecalho__menu">
+
+            <div class="menu__mobile">
+                <img src="./img/menu-mobile.png" alt="" class="icone__mobile">
+                <!-- <img src="./img/menu-mobile-close.png" alt="" class="icone__mobile__close"> -->
+            </div>
+    
+            <nav class="nav">
+                <ul class="nav__bloco">
+                    <a href="#header" class="nav__link">
+                        <ion-icon class="nav__icone" name="home-outline"></ion-icon>
+                        <li class="nav__item">Início</li>
+                    </a>
+                    <a href="#promocao" class="nav__link">
+                        <ion-icon class="nav__icone" name="cart-outline"></ion-icon>
+                        <li class="nav__item">Promoção</li>
+                    </a>
+                    <a href="#alimentos" class="nav__link">
+                        <ion-icon class="nav__icone"  name="pizza-outline"></ion-icon>
+                        <li class="nav__item">Alimentos</li>
+                    </a>
+    
+                    <a href="#bebidas" class="nav__link">
+                        <ion-icon class="nav__icone" name="wine-outline"></ion-icon>
+                        <li class="nav__item">Bebidas</li>
+                    </a>
+                    <a href="#limpeza" class="nav__link">
+                        <ion-icon class="nav__icone" name="trash-bin-outline"></ion-icon>
+                        <li class="nav__item">Limpeza</li>
+                    </a>
+                    <a href="#carnes" class="nav__link">
+                        <ion-icon class="nav__icone" name="fish-outline"></ion-icon>
+                        <li class="nav__item">Carnes</li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="logo__cabecalho">
+            <img src="./img/logo-azul.png" alt="" class="logo">
+        </div>
+
+
+        
+    </header>
+
+    <main class="main">
+        <div class="slider__promo">
+            <img src="./img/slider-promocoes/promo1.png" alt="" class="selected slide">
+            <img src="./img/slider-promocoes/promo2.png" alt="" class="slide">
+            <img src="./img/slider-promocoes/promo3.png" alt="" class="slide">
+            <img src="./img/slider-promocoes/promo4.png" alt="" class="slide">
+        </div>
+
+        <article class="promocao" id="promocao">
+
+            <div class="promo__titulo">
+                <!-- <img src="./img/promocao/promotion.png" alt="" class="img__titulo"> -->
+                <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_ardajn6t.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+                <h1 class="titulo">Termos Ofertas <br> Exclusivas para você</h1>
+            </div>
+
+            <div class="card__itens">
+                <div class="card">
+                    <p class="card__etiqueta__promo">promoção</p>
+                    <img src="./img/promocao/prod-1.png" alt="" class="card__img" loading="lazy">
+                    <h2 class="card__desc">Arroz Butuí</h2>
+                    <p class="card__peso">Pacote 1kg</p>
+
+                    <div class="card__preco--info">
+                        <div class="card__preco">
+                            <p class="card__preco--real">De: <s>R$ 4,00</s></p>
+                            <p class="card__preco--strong"> Por: <strong> R$ 3,00</strong></p>
+                        </div>
+                        <a href="" class="card__contato">
+                            <ion-icon name="logo-whatsapp" class="ico-pedido"></ion-icon>
+                            <p class="card__pedido">Contato</p>
+                        </a>
+                    </div>
+                   
+                    
+                </div>
+
+                <div class="card">
+                    <p class="card__etiqueta__promo">promoção</p>
+                    <img src="./img/promocao/prod-2.png" alt="" class="card__img" loading="lazy">
+                    <h2 class="card__desc">Carne Bovina</h2>
+                    <p class="card__peso">1kg</p>
+                    <div class="card__preco--info">
+                        <div class="card__preco">
+                            <p class="card__preco--real">De: <s>R$ 4,00</s></p>
+                            <p class="card__preco--strong"> Por: <strong> R$ 3,00</strong></p>
+                        </div>
+                        <a href="" class="card__contato">
+                            <ion-icon name="logo-whatsapp" class="ico-pedido"></ion-icon>
+                            <p class="card__pedido">Contato</p>
+                        </a>
+                    </div>
+                   
+                </div>
+
+                <div class="card">
+                    <p class="card__etiqueta__promo">promoção</p>
+                    <img src="./img/promocao/prod-3.png" alt="" class="card__img" loading="lazy">
+                    <h2 class="card__desc">Coca Cola</h2>
+                    <p class="card__peso">2 Litros</p>
+                    <div class="card__preco--info">
+                        <div class="card__preco">
+                            <p class="card__preco--real">De: <s>R$ 4,00</s></p>
+                            <p class="card__preco--strong"> Por: <strong> R$ 3,00</strong></p>
+                        </div>
+                        <a href="" class="card__contato">
+                            <ion-icon name="logo-whatsapp" class="ico-pedido"></ion-icon>
+                            <p class="card__pedido">Contato</p>
+                        </a>
+                    </div>
+                    
+                </div>
+
+                <div class="card">
+                    <p class="card__etiqueta__promo">promoção</p>
+                    <img src="./img/promocao/prod-4.png" alt="" class="card__img" loading="lazy">
+                    <h2 class="card__desc">Sabão Tixan Ype</h2>
+                    <p class="card__peso">Pacote 1kg</p>
+                    <div class="card__preco--info">
+                        <div class="card__preco">
+                            <p class="card__preco--real">De: <s>R$ 4,00</s></p>
+                            <p class="card__preco--strong"> Por: <strong> R$ 3,00</strong></p>
+                        </div>
+                        <a href="" class="card__contato">
+                            <ion-icon name="logo-whatsapp" class="ico-pedido"></ion-icon>
+                            <p class="card__pedido">Contato</p>
+                        </a>
+                    </div>
+                   
+                </div>
+
+                <div class="card">
+                    <p class="card__etiqueta__promo">promoção</p>
+                    <img src="./img/promocao/prod-1.png" alt="" class="card__img" loading="lazy">
+                    <h2 class="card__desc">Arroz Butuí</h2>
+                    <p class="card__peso">Pacote 1kg</p>
+
+                    <div class="card__preco--info">
+                        <div class="card__preco">
+                            <p class="card__preco--real">De: <s>R$ 4,00</s></p>
+                            <p class="card__preco--strong"> Por: <strong> R$ 3,00</strong></p>
+                        </div>
+                        <a href="" class="card__contato">
+                            <ion-icon name="logo-whatsapp" class="ico-pedido"></ion-icon>
+                            <p class="card__pedido">Contato</p>
+                        </a>
+                    </div>
+                   
+                    
+                </div>
+
+                <div class="card">
+                    <p class="card__etiqueta__promo">promoção</p>
+                    <img src="./img/promocao/prod-2.png" alt="" class="card__img" loading="lazy">
+                    <h2 class="card__desc">Carne Bovina</h2>
+                    <p class="card__peso">1kg</p>
+                    <div class="card__preco--info">
+                        <div class="card__preco">
+                            <p class="card__preco--real">De: <s>R$ 4,00</s></p>
+                            <p class="card__preco--strong"> Por: <strong> R$ 3,00</strong></p>
+                        </div>
+                        <a href="" class="card__contato">
+                            <ion-icon name="logo-whatsapp" class="ico-pedido"></ion-icon>
+                            <p class="card__pedido">Contato</p>
+                        </a>
+                    </div>
+                   
+                </div>
+
+                <div class="card">
+                    <p class="card__etiqueta__promo">promoção</p>
+                    <img src="./img/promocao/prod-3.png" alt="" class="card__img" loading="lazy">
+                    <h2 class="card__desc">Coca Cola</h2>
+                    <p class="card__peso">2 Litros</p>
+                    <div class="card__preco--info">
+                        <div class="card__preco">
+                            <p class="card__preco--real">De: <s>R$ 4,00</s></p>
+                            <p class="card__preco--strong"> Por: <strong> R$ 3,00</strong></p>
+                        </div>
+                        <a href="" class="card__contato">
+                            <ion-icon name="logo-whatsapp" class="ico-pedido"></ion-icon>
+                            <p class="card__pedido">Contato</p>
+                        </a>
+                    </div>
+                    
+                </div>
+
+                <div class="card"> 
+                    <p class="card__etiqueta__promo">promoção</p>
+                    <img src="./img/promocao/prod-4.png" alt="" class="card__img" loading="lazy">
+                    <h2 class="card__desc">Sabão Tixan Ype</h2>
+                    <p class="card__peso">Pacote 1kg</p>
+                    <div class="card__preco--info">
+                        <div class="card__preco">
+                            <p class="card__preco--real">De: <s>R$ 4,00</s></p>
+                            <p class="card__preco--strong"> Por: <strong> R$ 3,00</strong></p>
+                        </div>
+                        <a href="" class="card__contato">
+                            <ion-icon name="logo-whatsapp" class="ico-pedido"></ion-icon>
+                            <p class="card__pedido">Contato</p>
+                        </a>
+                    </div>
+                   
+                </div>
+
+                <div class="card">
+                    <p class="card__etiqueta__promo">promoção</p>
+                    <img src="./img/promocao/prod-1.png" alt="" class="card__img" loading="lazy">
+                    <h2 class="card__desc">Arroz Butuí</h2>
+                    <p class="card__peso">Pacote 1kg</p>
+
+                    <div class="card__preco--info">
+                        <div class="card__preco">
+                            <p class="card__preco--real">De: <s>R$ 4,00</s></p>
+                            <p class="card__preco--strong"> Por: <strong> R$ 3,00</strong></p>
+                        </div>
+                        <a href="" class="card__contato">
+                            <ion-icon name="logo-whatsapp" class="ico-pedido"></ion-icon>
+                            <p class="card__pedido">Contato</p>
+                        </a>
+                    </div>
+                   
+                    
+                </div>
+
+                <div class="card">
+                    <p class="card__etiqueta__promo">promoção</p>
+                    <img src="./img/promocao/prod-2.png" alt="" class="card__img" loading="lazy">
+                    <h2 class="card__desc">Carne Bovina</h2>
+                    <p class="card__peso">1kg</p>
+                    <div class="card__preco--info">
+                        <div class="card__preco">
+                            <p class="card__preco--real">De: <s>R$ 4,00</s></p>
+                            <p class="card__preco--strong"> Por: <strong> R$ 3,00</strong></p>
+                        </div>
+                        <a href="" class="card__contato">
+                            <ion-icon name="logo-whatsapp" class="ico-pedido"></ion-icon>
+                            <p class="card__pedido">Contato</p>
+                        </a>
+                    </div>
+                   
+                </div>
+
+                <div class="card">
+                    <p class="card__etiqueta__promo">promoção</p>
+                    <img src="./img/promocao/prod-3.png" alt="" class="card__img" loading="lazy">
+                    <h2 class="card__desc">Coca Cola</h2>
+                    <p class="card__peso">2 Litros</p>
+                    <div class="card__preco--info">
+                        <div class="card__preco">
+                            <p class="card__preco--real">De: <s>R$ 4,00</s></p>
+                            <p class="card__preco--strong"> Por: <strong> R$ 3,00</strong></p>
+                        </div>
+                        <a href="" class="card__contato">
+                            <ion-icon name="logo-whatsapp" class="ico-pedido"></ion-icon>
+                            <p class="card__pedido">Contato</p>
+                        </a>
+                    </div>
+                    
+                </div>
+
+                <div class="card">
+                    <p class="card__etiqueta__promo">promoção</p>
+                    <img src="./img/promocao/prod-4.png" alt="" class="card__img" loading="lazy">
+                    <h2 class="card__desc">Sabão Tixan Ype</h2>
+                    <p class="card__peso">Pacote 1kg</p>
+                    <div class="card__preco--info">
+                        <div class="card__preco">
+                            <p class="card__preco--real">De: <s>R$ 4,00</s></p>
+                            <p class="card__preco--strong"> Por: <strong> R$ 3,00</strong></p>
+                        </div>
+                        <a href="" class="card__contato">
+                            <ion-icon name="logo-whatsapp" class="ico-pedido"></ion-icon>
+                            <p class="card__pedido">Contato</p>
+                        </a>
+                    </div>
+                   
+                </div>
+
+            </div>
+            
+        </article>
+
+        <article class="alimentos" id="alimentos">
+            <div class="alimentos__cabecalho">
+
+                <div class="alimentos__titulo">
+                    <!-- <img src="./img/alimentos/icone-alimentos.png" alt="" class="img__alimentos"> -->
+                    <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_47pyyfcf.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+                    <h2 class="titulo">Sessão <br> Alimentos</h2>
+                </div>
+    
+                <div class="menu__alimentos js-menu-alimentos">
+                    <a class="menu__item">Arroz</a>
+                    <a class="menu__item">Feijão</a>
+                    <a class="menu__item">Biscoitos</a>
+                    <a class="menu__item">Frutas</a>
+                    <a class="menu__item">Enlatados</a>
+                </div>
+            </div>
+            
+
+            <section class="arroz__box js-conteudo-alimentos">
+                <h2 class="arroz__titulo">Arroz</h2>
+                <div class="arroz__cards">
+
+                    <div class="swiper arrox-box">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <div class="arroz__item">
+                                    <img src="./img/alimentos/arroz/arroz-1.png" alt="" class="arroz__img">
+                                    <h2 class="arroz__desc">Arroz Tio Urbano</h2>
+                                    <p class="arroz__peso">Pacote 1Kg</p>
+                                    <p class="arroz__preco">R$ 4,00</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="arroz__item">
+                                    <img src="./img/alimentos/arroz/arroz-1.png" alt="" class="arroz__img">
+                                    <h2 class="arroz__desc">Arroz Tio Urbano</h2>
+                                    <p class="arroz__peso">Pacote 1Kg</p>
+                                    <p class="arroz__preco">R$ 4,00</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="arroz__item">
+                                    <img src="./img/alimentos/arroz/arroz-1.png" alt="" class="arroz__img">
+                                    <h2 class="arroz__desc">Arroz Tio Urbano</h2>
+                                    <p class="arroz__peso">Pacote 1Kg</p>
+                                    <p class="arroz__preco">R$ 4,00</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="feijao__box js-conteudo-alimentos">
+                <h2 class="feijao__titulo">Feijão</h2>
+                <div class="feijao__cards">
+
+                    <div class="swiper feijao-box">
+                        <div class="swiper-wrapper">
+                            
+                            <div class="swiper-slide">
+                                <div class="feijao__item">
+                                    <img src="./img/alimentos/feijao/feijao-1.png" alt="" class="feijao__img">
+                                    <h2 class="feijao__desc">Feijao Carioca</h2>
+                                    <p class="feijao__peso">Pacote 1Kg</p>
+                                    <p class="feijao__preco">R$ 4,00</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="feijao__item">
+                                    <img src="./img/alimentos/feijao/feijao-2.png" alt="" class="feijao__img">
+                                    <h2 class="feijao__desc">Feijao Preto</h2>
+                                    <p class="feijao__peso">Pacote 1Kg</p>
+                                    <p class="feijao__preco">R$ 4,00</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="feijao__item">
+                                    <img src="./img/alimentos/feijao/feijao-2.png" alt="" class="feijao__img">
+                                    <h2 class="feijao__desc">Feijao Preto</h2>
+                                    <p class="feijao__peso">Pacote 1Kg</p>
+                                    <p class="feijao__preco">R$ 4,00</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                
+
+            </section>
+
+            <section class="biscoito__box js-conteudo-alimentos">
+                <h2 class="biscoito__titulo">Biscoitos</h2>
+                <div class="biscoito__cards">
+
+                    <div class="swiper biscoito-box">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="biscoito__item">
+                                    <img src="./img/alimentos/biscoitos/biscoito-1.png" alt="" class="biscoito__img">
+                                    <h2 class="biscoito__desc">Bolacha Cream Cracker - Pacote</h2>
+                                    <p class="biscoito__preco">R$ 6,00</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="biscoito__item">
+                                    <img src="./img/alimentos/biscoitos/biscoito-2.png" alt="" class="biscoito__img">
+                                    <h2 class="biscoito__desc">Biscoito Mabel - Pacote</h2>
+                                    <p class="biscoito__preco">R$ 6,00</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="biscoito__item">
+                                    <img src="./img/alimentos/biscoitos/biscoito-3.png" alt="" class="biscoito__img">
+                                    <h2 class="biscoito__desc">Biscoito BONO - Pacote</h2>
+                                    <p class="biscoito__preco">R$ 6,00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="frutas__box js-conteudo-alimentos">
+                <h2 class="frutas__titulo">Frutas</h2>
+                <div class="frutas__cards">
+
+                    <div class="swiper frutas-box">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="fruta__item">
+                                    <img src="./img/alimentos/frutas/fruta-1.png" alt="" class="fruta__img">
+                                    <h2 class="fruta__desc">Maça - Kg</h2>
+                                    <p class="fruta__preco">R$ 4,00</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="fruta__item">
+                                    <img src="./img/alimentos/frutas/fruta-2.png" alt="" class="fruta__img">
+                                    <h2 class="fruta__desc">Banana - Kg</h2>
+                                    <p class="fruta__preco">R$ 4,00</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="fruta__item">
+                                    <img src="./img/alimentos/frutas/fruta-3.png" alt="" class="fruta__img">
+                                    <h2 class="fruta__desc">Goiaba - Kg</h2>
+                                    <p class="fruta__preco">R$ 4,00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="enlatados__box js-conteudo-alimentos">
+                <h2 class="enlatados__titulo">Enlatados</h2>
+                <div class="enlatados__cards">
+
+                    <div class="swiper enlatados-box">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="enlatados__item">
+                                    <img src="./img/alimentos/enlatados/enlatado-1.png" alt="" class="enlatado__img">
+                                    <h2 class="enlatado__desc">Azeitona - MarcaX</h2>
+                                    <p class="enlatado__preco">R$ 4,00</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="enlatados__item">
+                                    <img src="./img/alimentos/enlatados/enlatado-2.png" alt="" class="enlatado__img">
+                                    <h2 class="enlatado__desc">Atum - Lata-X</h2>
+                                    <p class="enlatado__preco">R$ 4,00</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="enlatados__item">
+                                    <img src="./img/alimentos/enlatados/enlatado-3.png" alt="" class="enlatado__img">
+                                    <h2 class="enlatado__desc">Milho Verde - LataX</h2>
+                                    <p class="enlatado__preco">R$ 4,00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+        </article>
+
+        <article class="bebidas" id="bebidas">
+            <div class="bebidas__titulo">
+                <img src="./img/bebidas/icone-bebidas.png" alt="" class="img__bebidas">
+                <h2 class="titulo">Sessão <br> Bebidas</h2>
+            </div>
+
+            <div class="menu__bebidas js-menu-bebidas">
+                <a class="menu__item">Água</a>
+                <a class="menu__item">Refrigerante</a>
+                <a class="menu__item">Cerveja</a>
+            </div>
+
+            <section class="agua__box js-conteudo-bebidas">
+                <h2 class="agua__titulo">Água</h2>
+                <div class="agua__cards">
+
+                    <div class="swiper agua-box">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="agua__item">
+                                    <img src="./img/bebidas/agua/agua-1.png" alt="" class="agua__img">
+                                    <h2 class="agua__desc">Água Petrópolis</h2>
+                                    <p class="agua__peso">500 ML</p>
+                                    <p class="agua__preco">R$ 2,00</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="agua__item">
+                                    <img src="./img/bebidas/agua/agua-2.png" alt="" class="agua__img">
+                                    <h2 class="agua__desc">Água Cristal com gás</h2>
+                                    <p class="agua__peso">500 ML</p>
+                                    <p class="agua__preco">R$ 2,00</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="agua__item">
+                                    <img src="./img/bebidas/agua/agua-3.png" alt="" class="agua__img">
+                                    <h2 class="agua__desc">Água - Fardo c/12 unid.</h2>
+                                    <p class="agua__peso">500 ML</p>
+                                    <p class="agua__preco">R$ 18,00</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="refri__box js-conteudo-bebidas">
+                <h2 class="refri__titulo">Refrigerante</h2>
+                <div class="refri__cards">
+
+                    <div class="swiper refri-box">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="refri__item">
+                                    <img src="./img/bebidas/refrigerante/refri-1.png" alt="" class="refri__img">
+                                    <h2 class="refri__desc">Refrigerante </h2>
+                                    <p class="refri__peso">2 Litros</p>
+                                    <p class="refri__preco">R$ 6,50</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="refri__item">
+                                    <img src="./img/bebidas/refrigerante/refri-2.png" alt="" class="refri__img">
+                                    <h2 class="refri__desc">Latinha Refrigerante</h2>
+                                    <p class="refri__peso">350 ML</p>
+                                    <p class="refri__preco">R$ 3,50</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="refri__item">
+                                    <img src="./img/bebidas/refrigerante/refri-3.png" alt="" class="refri__img">
+                                    <h2 class="refri__desc">Refrigerante - Fardo 6 Unid.</h2>
+                                    <p class="refri__peso">2 Litros</p>
+                                    <p class="refri__preco">R$ 36,00</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cerveja__box js-conteudo-bebidas">
+                <h2 class="cerveja__titulo">Cerveja</h2>
+                <div class="cerveja__cards">
+
+                    <div class="swiper cerveja-box">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="cerveja__item">
+                                    <img src="./img/bebidas/cerveja/cerveja-1.png" alt="" class="cerveja__img">
+                                    <h2 class="cerveja__desc">Cerveja Brahma </h2>
+                                    <p class="cerveja__peso">600 ML</p>
+                                    <p class="cerveja__preco">R$ 7,00</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="cerveja__item">
+                                    <img src="./img/bebidas/cerveja/cerveja-2.png" alt="" class="cerveja__img">
+                                    <h2 class="cerveja__desc">Cerveja Budweiser </h2>
+                                    <p class="cerveja__peso">600 ML</p>
+                                    <p class="cerveja__preco">R$ 7,00</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="cerveja__item">
+                                    <img src="./img/bebidas/cerveja/cerveja-3.png" alt="" class="cerveja__img">
+                                    <h2 class="cerveja__desc">Cerveja Heineken - Lata  </h2>
+                                    <p class="cerveja__peso">350 ML</p>
+                                    <p class="cerveja__preco">R$ 3,50</p>
+                                </div>
+                            </div>
+
+                            
+
+                            
+                        </div>
+
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+
+        </article>
+
+        <article  class="limpeza" id="limpeza">
+            <div class="limpeza__titulo">
+                <img src="./img/limpeza/icone-limpeza.png" alt="" class="img__limpeza">
+                <h2 class="titulo">Sessão <br> Limpeza</h2>
+            </div>
+
+            <div class="menu__limpeza js-menu-limpeza">
+                <a class="menu__item">Sabão</a>
+                <a class="menu__item">Limpeza de Cozinha</a>
+                <a class="menu__item">Limpeza Geral</a>
+            </div>
+
+            <section class="sabao__box js-conteudo-limpeza">
+                <h2 class="sabao__titulo">Sabão</h2>
+                <div class="sabao__cards">
+
+                    <div class="swiper limpeza-box">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="sabao__item">
+                                    <img src="./img/limpeza/sabao/sabao-1.png" alt="" class="sabao__img">
+                                    <h2 class="sabao__desc">Sabão OMO</h2>
+                                    <p class="sabao__peso">800g</p>
+                                    <p class="sabao__preco">R$ 8,00</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="sabao__item">
+                                    <img src="./img/limpeza/sabao/sabao-2.png" alt="" class="sabao__img">
+                                    <h2 class="sabao__desc">Sabão em Barra YPÊ</h2>
+                                    <p class="sabao__peso">1 Kg</p>
+                                    <p class="sabao__preco">R$ 10,00</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="sabao__item">
+                                    <img src="./img/limpeza/sabao/sabao-3.png" alt="" class="sabao__img">
+                                    <h2 class="sabao__desc">Sabão em Pó Brilhante</h2>
+                                    <p class="sabao__peso">1 Kg</p>
+                                    <p class="sabao__preco">R$ 10,00</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="sabao__item">
+                                    <img src="./img/limpeza/sabao/sabao-4.png" alt="" class="sabao__img">
+                                    <h2 class="sabao__desc">Sabão Liquido</h2>
+                                    <p class="sabao__peso">2 Litros</p>
+                                    <p class="sabao__preco">R$ 14,00</p>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cozinha__box js-conteudo-limpeza">
+                <h2 class="cozinha__titulo">Limpeza de Cozinha</h2>
+                <div class="cozinha__cards">
+
+                    <div class="swiper cozinha-box">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="cozinha__item">
+                                    <img src="./img/limpeza/limp-cozinha/limp-1.png" alt="" class="cozinha__img">
+                                    <h2 class="cozinha__desc">Esponja de Aço Bombril</h2>
+                                    <p class="cozinha__peso">6 Unid - 60 G</p>
+                                    <p class="cozinha__preco">R$ 4,00</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="cozinha__item">
+                                    <img src="./img/limpeza/limp-cozinha/limp-2.png" alt="" class="cozinha__img">
+                                    <h2 class="cozinha__desc">Detergente Liquido Limpol</h2>
+                                    <p class="cozinha__peso">500 ML</p>
+                                    <p class="cozinha__preco">R$ 5,00</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="cozinha__item">
+                                    <img src="./img/limpeza/limp-cozinha/limp-3.png" alt="" class="cozinha__img">
+                                    <h2 class="cozinha__desc">Detergente Liquido Cif</h2>
+                                    <p class="cozinha__peso">350 ML</p>
+                                    <p class="cozinha__preco">R$ 4,00</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="limpeza-geral__box js-conteudo-limpeza">
+                <h2 class="limpeza-geral__titulo">Limpeza Geral</h2>
+                <div class="limpeza-geral__cards">
+
+                    <div class="swiper limpeza-geral-box">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="limpeza-geral__item">
+                                    <img src="./img/limpeza/limp-geral/limp-geral-1.png" alt="" class="limpeza-geral__img">
+                                    <h2 class="limpeza-geral__desc">Água Sanitária Q BOA</h2>
+                                    <p class="limpeza-geral__peso">1 Litro</p>
+                                    <p class="limpeza-geral__preco">R$ 5,00</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="limpeza-geral__item">
+                                    <img src="./img/limpeza/limp-geral/limp-geral-2.png" alt="" class="limpeza-geral__img">
+                                    <h2 class="limpeza-geral__desc">Álcool</h2>
+                                    <p class="limpeza-geral__peso">500 ML</p>
+                                    <p class="limpeza-geral__preco">R$ 5,00</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="limpeza-geral__item">
+                                    <img src="./img/limpeza/limp-geral/limp-geral-3.png" alt="" class="limpeza-geral__img">
+                                    <h2 class="limpeza-geral__desc">Limpador Perfumador - Casa & Perfume</h2>
+                                    <p class="limpeza-geral__peso">2 Litro</p>
+                                    <p class="limpeza-geral__preco">R$ 14,00</p>
+                                </div>
+                            </div>
+
+                        
+
+
+                        </div>
+
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__box">
+            <div class="footer__logo">
+                <img src="./img/logo-azul.png" alt="" class="footer__img">
+                <h2 class="footer__titulo">Siga nas redes sociais</h2>
+                <div class="footer__sociais">
+                    <a href="">
+                        <img class="footer__icone" src="./img/redes-sociais/instagram.png" alt="">
+                    </a>
+                    <a href="">
+                        <img class="footer__icone" src="./img/redes-sociais/whatsapp.png" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer__end">
+                <h3 class="footer__end__titulo">Localização</h3>
+                <p class="footer__rua">Rua: Maria Espedido Rodrigues</p>
+                <p class="footer__numero">nº 120</p>
+                <p class="footer__bairro">Centro</p>
+                <p class="footer__cidade">Pedra Branca - Ce</p>
+            </div>
+
+            <div class="footer__maps">
+                <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15887.081483321115!2d-39.723090173104055!3d-5.451786636740046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7bd9e14481f005f%3A0xfdd2d4825befa249!2sCentro%2C%20Pedra%20Branca%20-%20CE%2C%2063630-000!5e0!3m2!1spt-BR!2sbr!4v1649336619910!5m2!1spt-BR!2sbr" width="440" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+        <dir class="desenvolvedor">
+            <img class="dev__ico" src="./img/primata-code.png" alt="">
+            <div class="dev__titulo">
+                <a href="" class="dev__link">
+                    <h3 class="dev__name">Primata Code</h3>
+                </a>
+            </div>
+            <img class="dev__ico" src="./img/primata-code.png" alt="">
+        </dir>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/swiper-alimentos.js"></script>
+    <script src="./js/swiper-bebidas.js"></script>
+    <script src="./js/swiper-limpeza.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/nav-tab-menu.js"></script>
+    <script src="./js/menu-mobile.js"></script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+.promocao {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    padding-bottom: 4rem;
+
+        .promo__titulo {
+            @include titulo-section;
+            background: rgb(255,188,66);
+            background: linear-gradient(0deg, rgba(255,188,66,1) 0%, rgba(223,221,221,1) 100%);
+            box-shadow: 1px 4px 8px 1px #fff;
+            
+
+                @include mobile {
+                    gap: 1rem;
+                    display: flex;
+                    flex-direction: column-reverse;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                @include tablet {
+                    gap: 2rem;
+                }
+        }
+
+        .img__titulo {
+            width: 12.5rem;
+
+                @include mobile {
+                    width: 8rem;
+                }
+
+                @include tablet {
+                    width: 10rem;
+                }
+        }
+
+        .titulo {
+            color: #000;
+            font-size: 3rem;
+            font-family: $fonte-titulo;
+            text-align: center;
+
+                @include mobile {
+                    font-size: 2rem;
+                }
+
+                @include tablet {
+                    font-size: 2rem;
+                }
+        }
+
+        .card__itens {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+            align-items: center;
+            margin-top: 3rem;
+        }
+
+        .card {
+            @include card-config;
+            position: relative;
+
+            &:hover .card__preco--info {
+                transition: all .5s;
+                box-shadow: 10px 13px 0px 0px rgba(0,0,0,1);
+            }
+        }
+
+        .card__etiqueta__promo {
+            background-color: $cor-botoes;
+            font-family: $fonte-corpo;
+            position: absolute;
+            top: 0;
+            left: -15px;
+            padding: .5rem;
+            width: 100px;
+            color: #fff;
+            border-radius: 4px;
+            border: 1px solid #000;
+            transform: rotateZ(-25deg);
+            text-transform: uppercase;
+        }
+
+        .card__img {
+            width: 180px;
+        }
+
+        .card__desc {
+            font-family: $fonte-titulo;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .card__peso {
+            font-family: $fonte-titulo;
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .card__preco--info {
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+            padding: 1rem 0rem;
+            border-radius: 4px;
+        }
+
+        .card__preco {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: .8rem;
+            padding: .5rem;
+            color: #000;
+        }
+
+        .card__preco--real {
+            font-size: 1rem;
+            font-family: $fonte-corpo;
+            color: #fff;
+            opacity: .5;
+        }
+
+        .card__preco--strong {
+            color: #000;
+            font-size: 1rem;
+            font-family: $fonte-corpo;
+            color: #fff;
+        }
+
+        .card__preco--strong strong {
+            font-size: 1.6rem;
+            font-weight: bold
+        }
+
+        .card__contato {
+            @include card-preco;
+            background-color: #00d4ff;
+            margin-top: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: .4rem;
+            width: 160px;
+            margin: .8rem auto;
+            font-family: $fonte-titulo;
+            border-radius: 20px;
+
+            &:hover {
+                background: #00d4ff;
+                transition: all .5s;
+            } 
+
+            &:hover .card__pedido {
+                color: #000;
+            }
+
+            &:hover .ico-pedido {
+                color: #000;
+            }
+        }
+
+        .ico-pedido {
+            color: #fff;
+        }
+
+        .card__pedido {
+           color: #fff;
+           font-weight: bold;
+        }
+}

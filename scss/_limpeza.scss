@@ -1,0 +1,242 @@
+.limpeza {
+    background-image: url("../img/background-section.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    .js-conteudo-limpeza {
+        display: none;
+    }
+
+    .js-conteudo-limpeza.ativo {
+        display: block;
+        animation: show .5s forwards;
+    }
+
+    @keyframes show {
+        from {
+            opacity: 0;
+            transform: translate3d(-50px, 0, 0);
+        } 
+        to {
+            opacity: 1;
+            transform: translate3d(0, 0, 0)
+        }
+    }
+
+        .limpeza__titulo {
+            @include titulo-section;
+
+            @include mobile {
+                gap: 1rem;
+            }
+
+            @include tablet {
+                gap: 1.4rem;
+            }
+        }
+
+        .img__limpeza {
+            width: 12.5rem;
+
+            @include mobile {
+                width: 8rem;
+            }
+        }
+
+        .titulo {
+            font-family: $fonte-titulo;
+            font-size: 4rem;
+            color: #fff;
+            text-align: center;
+
+                @include mobile {
+                    font-size: 2rem;    
+                }
+
+                @include tablet {
+                    font-size: 2.8rem;    
+                }
+        }
+
+        .menu__limpeza {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            background-color: $cor-header;
+            padding: 2rem 0rem;
+
+                @include mobile {
+                    gap: 1rem;
+                    padding: 2rem 0.5rem;
+                }
+
+                @include tablet {
+                    gap: 1rem;
+                    padding: 2rem 0.5rem;
+                }
+        }
+
+        .menu__item {
+            @include btn-section;
+
+                @include mobile {
+                    font-size: 1.2rem;
+                }
+
+                &:hover {
+                    box-shadow: 0px 0px 2px 1px #fff;
+                    color: #000;
+                    transition: .4s;
+                } 
+        }
+
+         /***** SESSÂO SABÃO *****/
+        .sabao__box {
+            padding: 3rem 0rem;
+        }
+
+        .sabao__titulo {
+            @include card-titulo;
+        }
+
+        .sabao__cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sabao__item {
+            @include card-config;
+        }
+
+        .sabao__img {
+             width: 180px;
+        }
+
+        .sabao__desc {
+            font-family: $fonte-titulo;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .sabao__peso {
+            font-family: $fonte-titulo;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .sabao__preco {
+            @include card-preco;
+        }
+
+         /***** SESSÂO LIMPEZA DE COZINHA *****/
+        .cozinha__box {
+            padding: 3rem 0rem;
+        }
+
+        .cozinha__titulo {
+            @include card-titulo;
+        }
+
+        .cozinha__cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cozinha__item {
+            @include card-config;
+        }
+
+        .cozinha__img {
+             width: 180px;
+         }
+
+        .cozinha__desc {
+            font-family: $fonte-titulo;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .cozinha__peso {
+            font-family: $fonte-titulo;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .cozinha__preco {
+            @include card-preco;
+        }
+
+
+    /***** SESSÂO LIMPEZA GERAL *****/
+        .limpeza-geral__box {
+            padding: 3rem 0rem;
+        }
+
+        .limpeza-geral__titulo {
+            @include card-titulo;
+        }
+
+        .limpeza-geral__cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .limpeza-geral__item {
+            @include card-config;
+        }
+
+        .limpeza-geral__img {
+            width: 180px;
+        }
+
+        .limpeza-geral__desc {
+            font-family: $fonte-titulo;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .limpeza-geral__peso {
+            font-family: $fonte-titulo;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .limpeza-geral__preco {
+            @include card-preco;
+        }
+
+
+
+
+
+
+
+
+
+
+        /***** SWIPER CONFIG *****/
+        .swiper {
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+          }
+    
+          .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 300px;
+            height: 300px;
+          }
+}

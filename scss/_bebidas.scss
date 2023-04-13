@@ -1,0 +1,240 @@
+.bebidas {
+    background-image: url("../img/background-section.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .js-conteudo-bebidas {
+        display: none;
+    }
+
+    .js-conteudo-bebidas.ativo {
+        display: block;
+        animation: show .5s forwards;
+    }
+
+    @keyframes show {
+        from {
+            opacity: 0;
+            transform: translate3d(-50px, 0, 0);
+        } 
+        to {
+            opacity: 1;
+            transform: translate3d(0, 0, 0)
+        }
+    }
+
+
+        .bebidas__titulo {
+            @include titulo-section;
+
+            @include mobile {
+                gap: 1rem;
+            }
+
+            @include tablet {
+                gap: 1.4rem;
+            }
+        }
+
+        .img__bebidas {
+            width: 12.5rem;
+
+            @include mobile {
+                width: 8rem;
+            }
+        }
+
+        .titulo {
+            font-family: $fonte-titulo;
+            font-size: 4rem;
+            color: #fff;
+            text-align: center;
+
+                @include mobile {
+                    font-size: 2rem;    
+                }
+
+                @include tablet {
+                    font-size: 2.8rem;    
+                }
+        }
+
+        .menu__bebidas {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            background-color: $cor-header;
+            padding: 2rem 0rem;
+
+                @include mobile {
+                    gap: 1rem;
+                    padding: 2rem 0.5rem;
+                }
+
+                @include tablet {
+                    gap: 1rem;
+                    padding: 2rem 0.5rem;
+                }
+        }
+
+        .menu__item {
+            @include btn-section;
+
+                @include mobile {
+                    font-size: 1.2rem;
+                    
+                }
+
+                &:hover {
+                    box-shadow: 0px 0px 2px 1px #fff;
+                    color: #000;
+                    transition: .4s;
+                }    
+        }
+
+        /***** SESSÂO ÁGUA *****/
+        .agua__box {
+            padding: 3rem 0rem;
+        }
+
+        .agua__titulo {
+            @include card-titulo;
+        }
+
+        .agua__cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .agua__item {
+            @include card-config;
+        }
+
+        .agua__img {
+            width: 180px;
+        }
+
+        .agua__desc {
+            font-family: $fonte-titulo;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .agua__peso {
+            font-family: $fonte-titulo;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .agua__preco {
+            @include card-preco;
+        }
+
+        /***** SESSÂO REFRIGERANTE *****/
+        .refri__box {
+            padding: 3rem 0rem;
+        }
+
+        .refri__titulo {
+            @include card-titulo;
+        }
+
+        .refri__cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .refri__item {
+            @include card-config;
+        }
+
+        .refri__img {
+            width: 180px;
+        }
+
+        .refri__desc {
+            font-family: $fonte-titulo;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .refri__peso {
+            font-family: $fonte-titulo;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .refri__preco {
+            @include card-preco;
+        }
+
+        /***** SESSÂO CERVEJA *****/
+        .cerveja__box {
+            padding: 3rem 0rem;
+        }
+
+        .cerveja__titulo {
+            @include card-titulo;
+        }
+
+        .cerveja__cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cerveja__item {
+            @include card-config;
+        }
+
+        .cerveja__img {
+            width: 180px;
+        }
+
+        .cerveja__desc {
+            font-family: $fonte-titulo;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .cerveja__peso {
+            font-family: $fonte-titulo;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .cerveja__preco {
+            @include card-preco;
+        }
+
+
+
+        /***** SWIPER CONFIG *****/
+        .swiper {
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+          }
+    
+          .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 300px;
+            height: 300px;
+          }
+
+
+
+
+
+}
