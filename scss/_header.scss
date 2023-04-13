@@ -1,6 +1,6 @@
 .header {
-    // height: 80vh;
-    background-color: $cor-header;
+    background: rgb(23,128,122);
+    background: linear-gradient(0deg, rgba(23,128,122,1) 0%, rgba(252,176,64,1) 100%);  
     padding: 4rem;
     
 
@@ -15,17 +15,14 @@
             position: relative;
             display: flex;
             align-items: flex-start;
-            background-color: $cor-menu-mobile;
+            background: rgb(23,128,122);
+            background: linear-gradient(0deg, rgba(23,128,122,1) 0%, rgba(252,176,64,1) 100%);
             padding: 2px 6px;
             border-radius: 6px;
             border: 2px solid #000;
             margin-top: 1.5rem;
 
             @include mobile {
-                // width: 20%;
-                // padding-left: 1rem;
-                // border-radius: 6px;
-                // box-shadow: 1px 1px 4px 5px #fff;
                 margin-top: 1.5rem;
             }
             
@@ -33,17 +30,12 @@
 
         .icone__mobile {
             cursor: pointer;
-            width: 40px;
-            
+            width: 40px;        
 
                 @include mobile {
-                    width: 40px;
-                    // padding-bottom: 1rem;
+                    width: 40px;  
                     background: rgba(0, 0, 0, 0.1);
-                    background-color: $cor-menu-mobile;
-                    // border-radius: 60%;
-                    // display: block;
-                    // margin: 0 auto;
+                    background-color: $cor-section1;
                 }
 
                 @include landscape {
@@ -57,8 +49,8 @@
 
         .nav {
             margin-top: 4rem;
-            background-color: $cor-menu-mobile;
-            width: 140%;
+            background: rgb(23,128,122);
+            background: linear-gradient(0deg, rgba(23,128,122,1) 0%, rgba(252,176,64,1) 100%);
             padding: .5rem;
             border-top-right-radius: 6px;
             border-bottom-right-radius: 6px;
@@ -70,7 +62,7 @@
             position: relative;
     
                 @include mobile {
-                    background-color: $cor-menu-mobile;
+                    background-color: $cor-section1;
                     width: 100%;
                     padding: .5rem;
                     border-top-right-radius: 6px;
@@ -83,7 +75,7 @@
                 }
 
                 @include tablet {
-                    background-color: $cor-menu-mobile;
+                    background-color: $cor-section1;
                     width: 100%;
                     padding: .5rem;
                     border-top-right-radius: 6px;
@@ -140,21 +132,23 @@
             align-items: center;
             justify-content: center;
             gap: .1rem;
+            background-color: #fff;
             box-shadow: 0px 1px 10px 1px #000;
             padding: 0 .4rem;
             border-radius: 8px;
 
                 &:hover {
-                    background-color: #fff;
+                    background: rgb(23,128,122);
+                    background: linear-gradient(0deg, rgba(23,128,122,1) 0%, rgba(252,176,64,1) 100%);
                     transition: all .8s; 
                 }
 
                 &:hover .nav__item {
-                    color: #000;
+                    color: #fff;
                 }
 
                 &:hover .nav__icone {
-                    color: #000;
+                    color: #fff;
                 }
 
                 @include mobile {
@@ -240,9 +234,5 @@
 
         }
 
-        
-
-        
-        
 
 }
