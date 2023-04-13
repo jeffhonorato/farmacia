@@ -2,7 +2,7 @@
 $cor-header: #17807A;
 $cor-section1: #fcb040;
 $cor-botoes: #004a47;
-$cor-background: #dfdddd;
+$cor-background: #e1e1e1;
 $fonte-menu: 'Secular One', sans-serif;
 $fonte-titulo: 'DynaPuff', cursive;
 $fonte-corpo: 'Quattrocento', serif;;
@@ -63,7 +63,7 @@ ul, li {
     text-align: center;
     padding: 1rem;
     box-shadow: 7px 7px 0px 0px $cor-botoes;
-    background: #fff;
+    background: $cor-background;
     border-radius: 6px;
     border: 1px solid #000;
     width: 320px;
@@ -72,6 +72,7 @@ ul, li {
         &:hover {
             transition: all .5s;
             box-shadow: 10px 13px 0px 0px $cor-botoes;
+            background: #fff;
         }
 }
 
@@ -124,7 +125,7 @@ ul, li {
 @import "header";
 @import "slider-promo";
 @import "promocao";
-@import "../scss/medicamentos/remeddios";
+@import "../scss/medicamentos/remedios";
 @import "bebidas";
 @import "limpeza";
 @import "footer";
