@@ -162,65 +162,7 @@
             max-width: 140px;
             border: 2px solid #fff;
             margin: 0 auto;
-        }
-
-        /***** SESSÂO FEIJÃO *****/
-        .feijao__box {
-            background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(9,9,121,1) 35%, rgba(2,0,36,1) 100%);
-            padding: 3rem 0rem;
-        }
-
-        .feijao__titulo {
-            font-family: $fonte-titulo;
-            text-align: center;
-            margin-bottom: 2rem;
-            font-size: 3rem;
-            text-decoration: underline;
-            color: #fff;
-        }
-        
-        .feijao__cards {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 2rem;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .feijao__item {
-            @include card-config;
-
-            &:hover .feijao__preco {
-                box-shadow: 7px 7px 0px 0px $cor-section1;
-            }
-            
-        }
-
-        .feijao__img {
-            width: 180px;
-        }
-
-        .feijao__desc {
-            font-family: $fonte-titulo;
-            font-size: 1.4rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .feijao__peso {
-            font-family: $fonte-titulo;
-            font-size: 1.2rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .feijao__preco {
-            @include card-preco;
-            background-color: rgba(223,221,221,1);
-            box-shadow: 7px 7px 0px 0px rgba(0,0,0,1);
-            color: #000;
-            font-size: 2rem;
-            max-width: 140px;
-            margin: 0 auto;
-        }
+        } 
 
         /***** SESSÂO BISCOITOS *****/
         .biscoito__box {
