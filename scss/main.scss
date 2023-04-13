@@ -1,7 +1,7 @@
 /* FONTES - CORES*/
 $cor-header: #17807A;
 $cor-section1: #fcb040;
-$cor-botoes: #F4442E;
+$cor-botoes: #004a47;
 $cor-background: #dfdddd;
 $fonte-menu: 'Secular One', sans-serif;
 $fonte-titulo: 'DynaPuff', cursive;
@@ -62,14 +62,14 @@ ul, li {
 @mixin card-config {
     text-align: center;
     padding: 1rem;
-    box-shadow: 7px 7px 0px 0px #000;
+    box-shadow: 7px 7px 0px 0px $cor-botoes;
     background: #fff;
     border-radius: 6px;
     width: 300px;
 
         &:hover {
             transition: all .5s;
-            box-shadow: 10px 13px 0px 0px rgba(0,0,0,1);
+            box-shadow: 10px 13px 0px 0px $cor-botoes;
         }
 }
 
