@@ -1,7 +1,7 @@
 // SESSÃO TAB ALIMENTOS
 
 const tabmenu = document.querySelectorAll(".js-menu-alimentos a");
-const tabConteudo = document.querySelectorAll(".alimentos section");
+const tabConteudo = document.querySelectorAll(".medicamentos section");
 tabConteudo[0].classList.add("ativo");
 
 
