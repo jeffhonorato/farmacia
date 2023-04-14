@@ -115,6 +115,7 @@
             padding: 3rem 0rem;
             background: rgb(255,188,66);
             background: linear-gradient(90deg, rgba(255,188,66,1) 0%, rgba(23,128,122,1) 50%, rgba(255,255,255,1) 100%);
+
         }
 
         .arroz__titulo {
@@ -132,6 +133,7 @@
 
         .arroz__item {
             @include card-config;
+            height: 400px;
 
             &:hover .arroz__preco {
                 box-shadow: 7px 7px 0px 0px $cor-section1;
