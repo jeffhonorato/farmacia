@@ -209,6 +209,7 @@
 
         .card__sobre--p {
             font-family: $fonte-corpo;
+            user-select: none;
         }
 
         .card__sobre--sintomas {
