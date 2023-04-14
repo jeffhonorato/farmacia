@@ -227,20 +227,23 @@
             -webkit-backdrop-filter: blur(15.1px);
             border: 1px solid rgba(193, 193, 193, 1);
             padding: .3rem;
+            animation: opacityEffect 1s forwards;
+            
         }
 
         .card__sobre--conteudo.ativo {
             display: block;
+            
         }
 
-        // .card__sobre--conteudo-1 {
-        //     position: absolute;
-        //     display: none;
-        // }
+}
 
-        // .js-sobre-conteudo-1.ativo {
-        //     display: block;
-        // }
+@keyframes opacityEffect {
+    from {
+        opacity: 0;
+    }
 
-
+    to {
+        opacity: 1;
+    }
 }
