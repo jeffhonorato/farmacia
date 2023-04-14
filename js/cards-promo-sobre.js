@@ -40,6 +40,28 @@ const cardPromo2 = () => {
     });
 }
 
+const cardPromo3 = () => {
+    const btnSobre_3 = document.querySelectorAll(".js-card-btn-sobre-3");
+    const sobreConteudo_3 = document.querySelectorAll(".js-sobre-conteudo-3");
+    sobreConteudo_3[0].classList.add("ativo");
+    
+    function ativandoConteudo(index) {
+    
+        sobreConteudo_3.forEach((conteudo) => {
+            conteudo.classList.remove("ativo")
+        });
+    
+        sobreConteudo_3[index].classList.add("ativo");
+    };
+    
+    btnSobre_3.forEach((itemMenu, index) => {
+        itemMenu.addEventListener("click", () => {
+            ativandoConteudo(index);
+        });
+    });
+}
+
 
 cardPromo1();
 cardPromo2();
+cardPromo3();
