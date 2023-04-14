@@ -172,4 +172,66 @@
            color: #fff;
            font-weight: bold;
         }
+
+        .card__sobre {
+            margin-top: 1rem;
+        }
+
+        .card__sobre--menu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: .3rem;
+        }
+
+        .card__menu--btn {
+            border-radius: 6px;
+            border: none;
+            font-family: $fonte-corpo;
+            font-size: 1rem;
+            padding: .4rem;
+            cursor: pointer;
+            box-shadow: 5px 0px 0px 0px #000;
+            background-color: $cor-botoes;
+            color: #fff;
+
+            &:hover {
+                background-color: $cor-background;
+                transition: all .5s;
+                color: #000;
+            }
+        }
+
+        .card__sobre--info {
+            margin-top: 1rem;
+            position: relative;
+        }
+
+        .card__sobre--p {
+            font-family: $fonte-corpo;
+        }
+
+        .card__sobre--sintomas {
+            text-transform: lowercase;
+        }
+
+        .card__sobre--conteudo {
+            position: absolute;
+            display: none;
+        }
+
+        .card__sobre--conteudo.ativo {
+            display: block;
+        }
+
+        // .card__sobre--conteudo-1 {
+        //     position: absolute;
+        //     display: none;
+        // }
+
+        // .js-sobre-conteudo-1.ativo {
+        //     display: block;
+        // }
+
+
 }
