@@ -58,8 +58,7 @@
            
                 @include mobile {
                     background-color: $cor-section1;
-                    width: 100vw;
-                    height: 100vh;
+                    width: 200px;
                     padding: .5rem;
                     border-top-right-radius: 6px;
                     border-bottom-right-radius: 6px;
@@ -67,6 +66,7 @@
                     display: none;
                     animation: show .8s;
                     transition: all .5s;
+                    margin-top: 10px;
                 }
 
                 @include tablet {
