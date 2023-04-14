@@ -55,6 +55,7 @@
             animation: show .8s;
             transition: all .5s;
             position: relative;
+            margin-top: 10px;
            
                 @include mobile {
                     background-color: $cor-section1;
