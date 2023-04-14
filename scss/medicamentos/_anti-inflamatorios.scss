@@ -23,6 +23,7 @@
 
 .feijao__item {
     @include card-config;
+    height: 400px;
 
     &:hover .feijao__preco {
         box-shadow: 7px 7px 0px 0px $cor-section1;
