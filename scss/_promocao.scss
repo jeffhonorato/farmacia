@@ -227,7 +227,7 @@
             -webkit-backdrop-filter: blur(15.1px);
             border: 1px solid rgba(193, 193, 193, 1);
             padding: .3rem;
-            animation: opacityEffect 1s forwards;
+            animation: opacityEffect .3s forwards;
             
         }
 
@@ -240,10 +240,12 @@
 
 @keyframes opacityEffect {
     from {
+        margin-top: 100%;
         opacity: 0;
     }
 
     to {
+        margin-top: 0%;
         opacity: 1;
     }
 }
