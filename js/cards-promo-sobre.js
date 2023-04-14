@@ -2,9 +2,6 @@ const cardPromo1 = () => {
     const btnSobre_1 = document.querySelectorAll(".js-card-btn-sobre-1");
     const sobreConteudo_1 = document.querySelectorAll(".js-sobre-conteudo-1");
     sobreConteudo_1[0].classList.add("ativo");
-
-    console.log(btnSobre_1)
-    console.log(sobreConteudo_1)
     
     function ativandoConteudo(index) {
     
